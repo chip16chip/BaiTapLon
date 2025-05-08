@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Laptop - Cửa Hàng Điện Thoại</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #d9534f;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .product-category {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .category-header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg" alt="" style="width: 70px;">
+                Cửa Hàng Điện Thoại
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh Mục Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tất Cả Sản Phẩm</a>
+                            <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                            <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                            <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                            <a class="dropdown-item" href="lt.html">Laptop</a>
+                            <a class="dropdown-item" href="tv.html">Tivi</a>
+                            <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Giỏ Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dangNhapDangXuat.html" class="nav-link">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-4">
+
+            <!-- Sản Phẩm Mới -->
+            <div class="category-header">
+                <h3 class="text-center">Tất cả laptoplaptop</h3>
+            </div>
+            <div class="row">
+                <!-- Laptop 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop1.jpg" class="card-img-top" alt="Laptop 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Dell XPS 13</h5>
+                            <p class="product-price">12,000,000 VND</p>
+                            <p class="card-text">Laptop Dell XPS 13 với hiệu năng mạnh mẽ và thiết kế tinh tế.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop2.jpg" class="card-img-top" alt="Laptop 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop MacBook Pro 14</h5>
+                            <p class="product-price">30,000,000 VND</p>
+                            <p class="card-text">MacBook Pro 14 inch với màn hình sắc nét và hiệu suất vượt trội.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop3.jpg" class="card-img-top" alt="Laptop 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop HP Spectre x360</h5>
+                            <p class="product-price">25,000,000 VND</p>
+                            <p class="card-text">Laptop HP Spectre x360 với thiết kế sang trọng và khả năng xoay gập
+                                linh hoạt.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 4 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop4.jpg" class="card-img-top" alt="Laptop 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Lenovo ThinkPad X1 Carbon</h5>
+                            <p class="product-price">28,000,000 VND</p>
+                            <p class="card-text">ThinkPad X1 Carbon có hiệu năng cao và độ bền đáng kinh ngạc.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 5 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop5.jpg" class="card-img-top" alt="Laptop 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop ASUS ZenBook 13</h5>
+                            <p class="product-price">18,000,000 VND</p>
+                            <p class="card-text">ASUS ZenBook 13 mang đến hiệu năng vượt trội trong thiết kế mỏng nhẹ.
+                            </p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 6 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop6.jpg" class="card-img-top" alt="Laptop 6">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Acer Predator Helios 300</h5>
+                            <p class="product-price">35,000,000 VND</p>
+                            <p class="card-text">Acer Predator Helios 300 là sự lựa chọn tuyệt vời cho game thủ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 7 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop7.jpg" class="card-img-top" alt="Laptop 7">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Microsoft Surface Laptop 4</h5>
+                            <p class="product-price">28,000,000 VND</p>
+                            <p class="card-text">Laptop Surface Laptop 4 sở hữu màn hình đẹp và hiệu năng tuyệt vời.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 8 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop8.jpg" class="card-img-top" alt="Laptop 8">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Razer Blade 15</h5>
+                            <p class="product-price">40,000,000 VND</p>
+                            <p class="card-text">Laptop Razer Blade 15 với thiết kế gaming cực kỳ mạnh mẽ và linh hoạt.
+                            </p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 9 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop9.jpg" class="card-img-top" alt="Laptop 9">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop MSI GE66 Raider</h5>
+                            <p class="product-price">42,000,000 VND</p>
+                            <p class="card-text">MSI GE66 Raider là lựa chọn tuyệt vời cho game thủ với màn hình tốc độ
+                                cao.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 10 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop10.jpg" class="card-img-top" alt="Laptop 10">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Dell Alienware m15</h5>
+                            <p class="product-price">45,000,000 VND</p>
+                            <p class="card-text">Alienware m15 là dòng laptop chơi game cao cấp, tối ưu cho các game thủ
+                                chuyên nghiệp.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 11 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop11.jpg" class="card-img-top" alt="Laptop 11">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop ASUS TUF Gaming F15</h5>
+                            <p class="product-price">23,000,000 VND</p>
+                            <p class="card-text">ASUS TUF Gaming F15 là lựa chọn tuyệt vời cho các game thủ yêu thích
+                                hiệu suất mạnh mẽ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 12 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop12.jpg" class="card-img-top" alt="Laptop 12">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop HP Pavilion 15</h5>
+                            <p class="product-price">18,500,000 VND</p>
+                            <p class="card-text">Laptop HP Pavilion 15 cung cấp hiệu suất tốt với thiết kế mỏng nhẹ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 13 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop13.jpg" class="card-img-top" alt="Laptop 13">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Lenovo Legion 5</h5>
+                            <p class="product-price">22,000,000 VND</p>
+                            <p class="card-text">Laptop Lenovo Legion 5 là dòng laptop gaming mạnh mẽ với cấu hình cao.
+                            </p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 14 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop14.jpg" class="card-img-top" alt="Laptop 14">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Dell Inspiron 15</h5>
+                            <p class="product-price">19,000,000 VND</p>
+                            <p class="card-text">Dell Inspiron 15 với hiệu năng ổn định và thiết kế tinh tế.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 15 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop15.jpg" class="card-img-top" alt="Laptop 15">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop MSI GF63 Thin</h5>
+                            <p class="product-price">20,500,000 VND</p>
+                            <p class="card-text">MSI GF63 Thin có cấu hình tốt và thiết kế mỏng nhẹ, phù hợp với các
+                                game thủ và dân văn phòng.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 16 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop16.jpg" class="card-img-top" alt="Laptop 16">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop HP Omen 15</h5>
+                            <p class="product-price">29,000,000 VND</p>
+                            <p class="card-text">Laptop HP Omen 15 với cấu hình mạnh mẽ, tối ưu cho gaming và sáng tạo
+                                nội dung.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 17 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop17.jpg" class="card-img-top" alt="Laptop 17">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Razer Blade Stealth 13</h5>
+                            <p class="product-price">33,000,000 VND</p>
+                            <p class="card-text">Razer Blade Stealth 13 là lựa chọn tuyệt vời cho những ai cần một chiếc
+                                laptop gaming mỏng nhẹ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 18 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop18.jpg" class="card-img-top" alt="Laptop 18">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Dell Latitude 7420</h5>
+                            <p class="product-price">35,000,000 VND</p>
+                            <p class="card-text">Dell Latitude 7420 là chiếc laptop doanh nhân với hiệu năng ổn định và
+                                tính di động cao.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 19 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop19.jpg" class="card-img-top" alt="Laptop 19">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Alienware Area-51m</h5>
+                            <p class="product-price">60,000,000 VND</p>
+                            <p class="card-text">Alienware Area-51m là một trong những laptop gaming mạnh mẽ nhất hiện
+                                nay.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 20 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop20.jpg" class="card-img-top" alt="Laptop 20">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop ASUS VivoBook 15</h5>
+                            <p class="product-price">17,000,000 VND</p>
+                            <p class="card-text">ASUS VivoBook 15 là chiếc laptop phù hợp cho sinh viên và học sinh, với
+                                cấu hình đủ dùng và thiết kế đẹp mắt.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 21 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop21.jpg" class="card-img-top" alt="Laptop 21">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop HP Elite Dragonfly</h5>
+                            <p class="product-price">55,000,000 VND</p>
+                            <p class="card-text">HP Elite Dragonfly là một laptop cao cấp, hướng đến đối tượng doanh
+                                nhân với thiết kế sang trọng.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 22 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop22.jpg" class="card-img-top" alt="Laptop 22">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Acer Aspire 5</h5>
+                            <p class="product-price">14,000,000 VND</p>
+                            <p class="card-text">Acer Aspire 5 với giá cả hợp lý và hiệu năng đủ dùng cho học tập và làm
+                                việc.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 23 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop23.jpg" class="card-img-top" alt="Laptop 23">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Lenovo ThinkPad L15</h5>
+                            <p class="product-price">17,500,000 VND</p>
+                            <p class="card-text">Lenovo ThinkPad L15 là một lựa chọn tuyệt vời cho công việc văn phòng
+                                với giá thành phải chăng.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 24 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop24.jpg" class="card-img-top" alt="Laptop 24">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Microsoft Surface Pro 7</h5>
+                            <p class="product-price">28,000,000 VND</p>
+                            <p class="card-text">Surface Pro 7 là chiếc laptop 2 trong 1 với hiệu năng tốt và thiết kế
+                                gọn nhẹ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 25 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop25.jpg" class="card-img-top" alt="Laptop 25">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop ASUS ROG Zephyrus G14</h5>
+                            <p class="product-price">35,000,000 VND</p>
+                            <p class="card-text">ASUS ROG Zephyrus G14 là chiếc laptop gaming mỏng nhẹ nhưng rất mạnh
+                                mẽ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Laptop 19 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop19.jpg" class="card-img-top" alt="Laptop 19">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop ASUS ROG Zephyrus G14</h5>
+                            <p class="product-price">38,000,000 VND</p>
+                            <p class="card-text">ASUS ROG Zephyrus G14 sở hữu hiệu năng vượt trội, phù hợp cho cả gaming
+                                và công việc sáng tạo.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 20 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/laptop20.jpg" class="card-img-top" alt="Laptop 20">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop MSI Stealth 15M</h5>
+                            <p class="product-price">34,000,000 VND</p>
+                            <p class="card-text">MSI Stealth 15M là laptop gaming mỏng nhẹ, phù hợp cho những người đam
+                                mê game hoặc công việc đồ họa.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-warning border-top text-dark text-center p-4 mt-5">
+        <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+        <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+        <p>Thực hiện bởi:</p>
+        <p><strong>Ngô Gia Bảo - 23681401</strong></p>
+        <p>Trường Đại học Công nghiệp</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".card product-card");
+            cards.forEach(function (card) {
+                card.addEventListener("click", function () {
+                    window.location.href = "chitietDon.html";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

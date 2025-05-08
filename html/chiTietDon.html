@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Cửa Hàng Điện Thoại</title>
+    <meta name="description" content="iPhone 15 Pro Max - Điện thoại cao cấp với thiết kế titan và camera chuyên nghiệp">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/product-detail.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="./img/logo.jpg" alt="Logo cửa hàng" width="70" height="70" class="rounded-circle mr-2">
+                    <span>Cửa Hàng Điện Thoại</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                                Danh Mục Sản Phẩm
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="products.html">Tất Cả Sản Phẩm</a>
+                                <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                                <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                                <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                                <a class="dropdown-item" href="lt.html">Laptop</a>
+                                <a class="dropdown-item" href="tv.html">Tivi</a>
+                                <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="cartCount" class="badge badge-danger">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dangNhapDangXuat.html">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container product-detail">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="product-gallery">
+                    <img src="./img/iphone4.jpg" alt="iPhone 15 Pro Max" class="product-img" id="mainImage">
+                </div>
+            </div>
+            <div class="col-md-7 product-info">
+                <h1 class="product-title">iPhone 15 Pro Max</h1>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-count">(128 đánh giá)</span>
+                </div>
+                <p class="product-price">34.990.000₫</p>
+                <div class="product-status">
+                    <p><i class="fas fa-check-circle text-success"></i> Còn hàng</p>
+                    <p><i class="fas fa-shield-alt"></i> Bảo hành 12 tháng chính hãng</p>
+                </div>
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                        <button class="btn btn-outline-secondary" onclick="increaseQuantity()">+</button>
+                    </div>
+                    <button class="btn btn-primary btn-lg" onclick="addToCart()">
+                        <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="product-details mt-5">
+            <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#description">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#specifications">Thông số kỹ thuật</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#reviews">Đánh giá</a>
+                </li>
+            </ul>
+
+            <div class="tab-content mt-3">
+                <!-- Tab content here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-warning text-dark text-center p-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+            <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+            <p>Thực hiện bởi: <strong>Ngô Gia Bảo - 23681401</strong></p>
+            <p>Trường Đại học Công nghiệp</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script>
+        let cartCount = 0;
+
+function changeImage(src) {
+    document.getElementById('mainImage').src = src;
+}
+
+function increaseQuantity() {
+    const quantityInput = document.getElementById('quantity');
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue < 10) {
+        quantityInput.value = currentValue + 1;
+    }
+}
+
+function decreaseQuantity() {
+    const quantityInput = document.getElementById('quantity');
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+}
+
+function addToCart() {
+    const quantity = parseInt(document.getElementById('quantity').value);
+    cartCount += quantity;
+    document.getElementById('cartCount').textContent = cartCount;
+    
+    const toast = document.createElement('div');
+    toast.className = 'toast show';
+    toast.style.position = 'fixed';
+    toast.style.top = '20px';
+    toast.style.right = '20px';
+    toast.style.backgroundColor = '#28a745';
+    toast.style.color = 'white';
+    toast.style.padding = '1rem';
+    toast.style.borderRadius = '4px';
+    toast.style.zIndex = '1000';
+    toast.innerHTML = `
+        <div class="toast-body">
+            Đã thêm ${quantity} sản phẩm vào giỏ hàng
+        </div>
+    `;
+    
+    document.body.appendChild(toast);
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+}
+
+// Initialize tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+    </script>
+</body>
+</html>

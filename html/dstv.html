@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Tivi - Cửa Hàng Điện Thoại</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #d9534f;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .product-category {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .category-header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg" alt="" style="width: 70px;">
+                Cửa Hàng Điện Thoại
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh Mục Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tất Cả Sản Phẩm</a>
+                            <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                            <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                            <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                            <a class="dropdown-item" href="lt.html">Laptop</a>
+                            <a class="dropdown-item" href="tv.html">Tivi</a>
+                            <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Giỏ Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dangNhapDangXuat.html" class="nav-link">Đăng xuấtt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-4">
+
+            <!-- Sản Phẩm Tivi -->
+            <div class="category-header">
+                <h3 class="text-center">Tất cả Tivi</h3>
+            </div>
+            <div class="row">
+                <!-- Tivi 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv1.jpg" class="card-img-top" alt="Tivi 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Samsung 55 inch</h5>
+                            <p class="product-price">10,000,000 VND</p>
+                            <p class="card-text">Tivi Samsung 55 inch với công nghệ 4K và âm thanh sống động.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv2.jpg" class="card-img-top" alt="Tivi 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi LG OLED 65 inch</h5>
+                            <p class="product-price">18,000,000 VND</p>
+                            <p class="card-text">Tivi LG OLED với hình ảnh sắc nét và màu sắc sống động.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv3.jpg" class="card-img-top" alt="Tivi 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Sony Bravia 4K 55 inch</h5>
+                            <p class="product-price">14,500,000 VND</p>
+                            <p class="card-text">Tivi Sony Bravia với hình ảnh 4K sắc nét và âm thanh vòm mạnh mẽ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 4 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv4.jpg" class="card-img-top" alt="Tivi 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Sharp 70 inch</h5>
+                            <p class="product-price">20,000,000 VND</p>
+                            <p class="card-text">Tivi Sharp 70 inch với màn hình rộng và độ phân giải 4K.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 5 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv5.jpg" class="card-img-top" alt="Tivi 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Panasonic 58 inch</h5>
+                            <p class="product-price">15,000,000 VND</p>
+                            <p class="card-text">Tivi Panasonic với chất lượng hình ảnh tuyệt vời và âm thanh mạnh mẽ.
+                            </p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 6 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv6.jpg" class="card-img-top" alt="Tivi 6">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi TCL 50 inch</h5>
+                            <p class="product-price">8,500,000 VND</p>
+                            <p class="card-text">Tivi TCL 50 inch với độ phân giải Full HD và hình ảnh sắc nét.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 7 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv7.jpg" class="card-img-top" alt="Tivi 7">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Samsung QLED 65 inch</h5>
+                            <p class="product-price">25,000,000 VND</p>
+                            <p class="card-text">Tivi Samsung QLED với công nghệ màu sắc tối ưu và âm thanh Dolby Atmos.
+                            </p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 8 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv8.jpg" class="card-img-top" alt="Tivi 8">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi LG 43 inch</h5>
+                            <p class="product-price">7,000,000 VND</p>
+                            <p class="card-text">Tivi LG 43 inch với hình ảnh sắc nét và các tính năng thông minh.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 9 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv9.jpg" class="card-img-top" alt="Tivi 9">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Panasonic 65 inch</h5>
+                            <p class="product-price">17,000,000 VND</p>
+                            <p class="card-text">Tivi Panasonic 65 inch với chất lượng hình ảnh sắc nét và âm thanh mạnh
+                                mẽ.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 10 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv10.jpg" class="card-img-top" alt="Tivi 10">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Sony 75 inch</h5>
+                            <p class="product-price">28,000,000 VND</p>
+                            <p class="card-text">Tivi Sony 75 inch với công nghệ 4K và hệ thống âm thanh vòm Dolby.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 11 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv11.jpg" class="card-img-top" alt="Tivi 11">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Sharp 55 inch</h5>
+                            <p class="product-price">12,500,000 VND</p>
+                            <p class="card-text">Tivi Sharp với màn hình sắc nét và nhiều tính năng thông minh.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 12 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv12.jpg" class="card-img-top" alt="Tivi 12">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi LG NanoCell 65 inch</h5>
+                            <p class="product-price">22,000,000 VND</p>
+                            <p class="card-text">Tivi LG NanoCell với công nghệ cải tiến màu sắc và độ sáng tuyệt vời.
+                            </p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 13 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv13.jpg" class="card-img-top" alt="Tivi 13">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Sony 55 inch</h5>
+                            <p class="product-price">13,000,000 VND</p>
+                            <p class="card-text">Tivi Sony 55 inch với công nghệ 4K và hình ảnh chân thực.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 14 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv14.jpg" class="card-img-top" alt="Tivi 14">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi Samsung 65 inch</h5>
+                            <p class="product-price">19,000,000 VND</p>
+                            <p class="card-text">Tivi Samsung 65 inch với thiết kế tinh tế và chất lượng 4K.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tivi 15 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="./img/tv15.jpg" class="card-img-top" alt="Tivi 15">
+                        <div class="card-body">
+                            <h5 class="product-title">Tivi TCL 55 inch</h5>
+                            <p class="product-price">9,500,000 VND</p>
+                            <p class="card-text">Tivi TCL 55 inch với màn hình sắc nét và độ phân giải 4K.</p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-warning border-top text-dark text-center p-4 mt-5">
+        <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+        <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+        <p>Thực hiện bởi:</p>
+        <p><strong>Ngô Gia Bảo - 23681401</strong></p>
+        <p>Trường Đại học Công nghiệp</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".card product-card");
+            cards.forEach(function (card) {
+                card.addEventListener("click", function () {
+                    window.location.href = "chitietDon.html";
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ - Cửa Hàng Điện Thoại</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/watches.css">
+</head>
+
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="./img/logo.jpg" alt="Logo cửa hàng" width="70">
+                    <span>Cửa Hàng Điện Thoại</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                Danh Mục Sản Phẩm
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="products.html">Tất Cả Sản Phẩm</a>
+                                <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                                <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                                <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                                <a class="dropdown-item" href="lt.html">Laptop</a>
+                                <a class="dropdown-item" href="tv.html">Tivi</a>
+                                <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="badge badge-danger" id="cartCount">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dangNhapDangXuat.html">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1 class="text-center mb-4">Đồng Hồ</h1>
+
+        <div class="watch-categories">
+            <!-- Smart Watches Section -->
+            <section class="watch-section mb-5" id="smartWatches">
+                <h2><i class="fas fa-clock"></i> Đồng Hồ Thông Minh</h2>
+                <div class="row" id="smartWatchesContainer"></div>
+            </section>
+
+            <!-- Casio Section -->
+            <section class="watch-section mb-5" id="casioWatches">
+                <h2><i class="fas fa-clock"></i> Đồng Hồ Casio</h2>
+                <div class="row" id="casioWatchesContainer"></div>
+            </section>
+
+            <!-- Seiko Section -->
+            <section class="watch-section mb-5" id="seikoWatches">
+                <h2><i class="fas fa-clock"></i> Đồng Hồ Seiko</h2>
+                <div class="row" id="seikoWatchesContainer"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-warning text-dark text-center p-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+            <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+            <p>Thực hiện bởi: <strong>Ngô Gia Bảo - 23681401</strong></p>
+            <p>Trường Đại học Công nghiệp</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/watches.js"></script>
+    <script>
+        const watchesData = {
+    smartWatches: [
+        { id: 1, name: 'Galaxy Watch 5', price: 5500000, image: 'img/dongho1.jpg' },
+        { id: 2, name: 'Apple Watch Series 8', price: 7500000, image: 'img/dongho2.jpg' },
+        { id: 3, name: 'Fitbit Versa 3', price: 4000000, image: 'img/dongho3.jpg' },
+        { id: 4, name: 'Huawei Watch GT 3', price: 6000000, image: 'img/dongho4.jpg' },
+        { id: 5, name: 'Xiaomi Mi Watch', price: 3200000, image: 'img/dongho5.jpg' }
+    ],
+    casioWatches: [
+        { id: 6, name: 'Casio G-Shock GA-2100', price: 2200000, image: 'img/dongho6.jpg' },
+        { id: 7, name: 'Casio Edifice EFR-539', price: 3000000, image: 'img/dongho7.jpg' },
+        { id: 8, name: 'Casio F91W', price: 400000, image: 'img/dongho8.jpg' },
+        { id: 9, name: 'Casio A168W-1', price: 500000, image: 'img/dongho9.jpg' },
+        { id: 10, name: 'Casio W-800H', price: 600000, image: 'img/dongho10.jpg' }
+    ],
+    seikoWatches: [
+        { id: 11, name: 'Seiko Presage Cocktail', price: 12000000, image: 'img/dongho11.jpg' },
+        { id: 12, name: 'Seiko 5 Sports', price: 4500000, image: 'img/dongho12.jpg' },
+        { id: 13, name: 'Seiko Turtle', price: 9000000, image: 'img/dongho13.jpg' },
+        { id: 14, name: 'Seiko Alpinist', price: 8000000, image: 'img/dongho14.jpg' },
+        { id: 15, name: 'Seiko SKX007', price: 6500000, image: 'img/dongho15.jpg' }
+    ]
+};
+
+function formatPrice(price) {
+    return new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND'
+    }).format(price);
+}
+
+function createWatchCard(watch) {
+    return `
+        <div class="col-md-2">
+            <div class="card" data-id="${watch.id}">
+                <img src="${watch.image}" class="card-img-top" alt="${watch.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${watch.name}</h5>
+                    <p class="card-text">${formatPrice(watch.price)}</p>
+                    <button class="btn btn-primary">Mua Ngay</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderWatches() {
+    document.getElementById('smartWatchesContainer').innerHTML = 
+        watchesData.smartWatches.map(createWatchCard).join('');
+    
+    document.getElementById('casioWatchesContainer').innerHTML = 
+        watchesData.casioWatches.map(createWatchCard).join('');
+    
+    document.getElementById('seikoWatchesContainer').innerHTML = 
+        watchesData.seikoWatches.map(createWatchCard).join('');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderWatches();
+    
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+            const watchId = card.dataset.id;
+            window.location.href = `chiTietDon.html?id=${watchId}`;
+        });
+    });
+});
+    </script>
+    
+</body>
+</html>

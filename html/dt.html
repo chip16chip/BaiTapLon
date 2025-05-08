@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Điện Thoại - Cửa Hàng Điện Thoại</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #d9534f;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .product-category {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .category-header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg" alt="" style="width: 70px;">
+                Cửa Hàng Điện Thoại
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh Mục Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tất Cả Sản Phẩm</a>
+                            <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                            <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                            <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                            <a class="dropdown-item" href="lt.html">Laptop</a>
+                            <a class="dropdown-item" href="tv.html">Tivi</a>
+                            <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Giỏ Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dangNhapDangXuat.html" class="nav-link">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-4">
+
+            <!-- Điện Thoại Mới -->
+            <div class="category-header">
+                <h3 class="text-center">Điện Thoại Mới</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Điện Thoại Mới 1 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phone1.jpg" class="card-img-top" alt="Điện Thoại 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Samsung Galaxy S23</h5>
+                            <p class="product-price">18.000.000đ</p>
+                            <p class="product-category">Điện Thoại Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Mới 2 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phone2.jpg" class="card-img-top" alt="Điện Thoại 2">
+                        <div class="card-body">
+                            <h5 class="product-title">iPhone 15</h5>
+                            <p class="product-price">25.000.000đ</p>
+                            <p class="product-category">Điện Thoại Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Mới 3 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phone3.jpg" class="card-img-top" alt="Điện Thoại 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Xiaomi Mi 13</h5>
+                            <p class="product-price">12.000.000đ</p>
+                            <p class="product-category">Điện Thoại Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Mới 4 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phone4.jpg" class="card-img-top" alt="Điện Thoại 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Oppo Find X5 Pro</h5>
+                            <p class="product-price">21.000.000đ</p>
+                            <p class="product-category">Điện Thoại Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Mới 5 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phone5.jpg" class="card-img-top" alt="Điện Thoại 5">
+                        <div class="card-body">
+                            <h5 class="product-title">OnePlus 11</h5>
+                            <p class="product-price">22.000.000đ</p>
+                            <p class="product-category">Điện Thoại Mới</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Điện Thoại iPhone -->
+            <div class="category-header">
+                <h3 class="text-center">Điện Thoại iPhone</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Điện Thoại iPhone 1 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/iphone1.jpg" class="card-img-top" alt="Điện Thoại iPhone 1">
+                        <div class="card-body">
+                            <h5 class="product-title">iPhone 14 Pro Max</h5>
+                            <p class="product-price">33.000.000đ</p>
+                            <p class="product-category">Điện Thoại iPhone</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại iPhone 2 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/iphone2.jpg" class="card-img-top" alt="Điện Thoại iPhone 2">
+                        <div class="card-body">
+                            <h5 class="product-title">iPhone 13</h5>
+                            <p class="product-price">24.000.000đ</p>
+                            <p class="product-category">Điện Thoại iPhone</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại iPhone 3 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/iphone3.jpg" class="card-img-top" alt="Điện Thoại iPhone 3">
+                        <div class="card-body">
+                            <h5 class="product-title">iPhone SE 2022</h5>
+                            <p class="product-price">14.000.000đ</p>
+                            <p class="product-category">Điện Thoại iPhone</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại iPhone 4 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/iphone4.jpg" class="card-img-top" alt="Điện Thoại iPhone 4">
+                        <div class="card-body">
+                            <h5 class="product-title">iPhone 12 Mini</h5>
+                            <p class="product-price">18.000.000đ</p>
+                            <p class="product-category">Điện Thoại iPhone</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại iPhone 5 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/iphone5.jpg" class="card-img-top" alt="Điện Thoại iPhone 5">
+                        <div class="card-body">
+                            <h5 class="product-title">iPhone 11</h5>
+                            <p class="product-price">16.500.000đ</p>
+                            <p class="product-category">Điện Thoại iPhone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Điện Thoại Samsung -->
+            <div class="category-header">
+                <h3 class="text-center">Điện Thoại Samsung</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Điện Thoại Samsung 1 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/samsung1.jpg" class="card-img-top" alt="Điện Thoại Samsung 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Samsung Galaxy Z Flip 4</h5>
+                            <p class="product-price">30.000.000đ</p>
+                            <p class="product-category">Điện Thoại Samsung</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Samsung 2 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/samsung2.jpg" class="card-img-top" alt="Điện Thoại Samsung 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Samsung Galaxy S22</h5>
+                            <p class="product-price">22.000.000đ</p>
+                            <p class="product-category">Điện Thoại Samsung</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Samsung 3 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/samsung3.jpg" class="card-img-top" alt="Điện Thoại Samsung 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Samsung Galaxy Note 20</h5>
+                            <p class="product-price">27.500.000đ</p>
+                            <p class="product-category">Điện Thoại Samsung</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Samsung 4 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/samsung4.jpg" class="card-img-top" alt="Điện Thoại Samsung 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Samsung Galaxy A52</h5>
+                            <p class="product-price">12.000.000đ</p>
+                            <p class="product-category">Điện Thoại Samsung</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Điện Thoại Samsung 5 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/samsung5.jpg" class="card-img-top" alt="Điện Thoại Samsung 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Samsung Galaxy M13</h5>
+                            <p class="product-price">8.000.000đ</p>
+                            <p class="product-category">Điện Thoại Samsung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Điện Thoại Bán Chạy -->
+        <div class="category-header">
+            <h3 class="text-center">Điện Thoại Bán Chạy</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Điện Thoại Bán Chạy 1 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/bestseller1.jpg" class="card-img-top" alt="Điện Thoại Bán Chạy 1">
+                    <div class="card-body">
+                        <h5 class="product-title">iPhone 13 Pro Max</h5>
+                        <p class="product-price">28.000.000đ</p>
+                        <p class="product-category">Điện Thoại Bán Chạy</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Bán Chạy 2 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/bestseller2.jpg" class="card-img-top" alt="Điện Thoại Bán Chạy 2">
+                    <div class="card-body">
+                        <h5 class="product-title">Samsung Galaxy S21</h5>
+                        <p class="product-price">22.000.000đ</p>
+                        <p class="product-category">Điện Thoại Bán Chạy</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Bán Chạy 3 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/bestseller3.jpg" class="card-img-top" alt="Điện Thoại Bán Chạy 3">
+                    <div class="card-body">
+                        <h5 class="product-title">Xiaomi Redmi Note 10</h5>
+                        <p class="product-price">7.000.000đ</p>
+                        <p class="product-category">Điện Thoại Bán Chạy</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Bán Chạy 4 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/bestseller4.jpg" class="card-img-top" alt="Điện Thoại Bán Chạy 4">
+                    <div class="card-body">
+                        <h5 class="product-title">Oppo Reno 5</h5>
+                        <p class="product-price">10.000.000đ</p>
+                        <p class="product-category">Điện Thoại Bán Chạy</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Bán Chạy 5 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/bestseller5.jpg" class="card-img-top" alt="Điện Thoại Bán Chạy 5">
+                    <div class="card-body">
+                        <h5 class="product-title">Realme 8 Pro</h5>
+                        <p class="product-price">9.000.000đ</p>
+                        <p class="product-category">Điện Thoại Bán Chạy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Điện Thoại Gaming -->
+        <div class="category-header">
+            <h3 class="text-center">Điện Thoại Gaming</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Điện Thoại Gaming 1 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/gaming1.jpg" class="card-img-top" alt="Điện Thoại Gaming 1">
+                    <div class="card-body">
+                        <h5 class="product-title">ASUS ROG Phone 6</h5>
+                        <p class="product-price">19.500.000đ</p>
+                        <p class="product-category">Điện Thoại Gaming</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Gaming 2 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/gaming2.jpg" class="card-img-top" alt="Điện Thoại Gaming 2">
+                    <div class="card-body">
+                        <h5 class="product-title">Xiaomi Black Shark 5 Pro</h5>
+                        <p class="product-price">16.000.000đ</p>
+                        <p class="product-category">Điện Thoại Gaming</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Gaming 3 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/gaming3.jpg" class="card-img-top" alt="Điện Thoại Gaming 3">
+                    <div class="card-body">
+                        <h5 class="product-title">Lenovo Legion Phone Duel 2</h5>
+                        <p class="product-price">18.000.000đ</p>
+                        <p class="product-category">Điện Thoại Gaming</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Gaming 4 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/gaming4.jpg" class="card-img-top" alt="Điện Thoại Gaming 4">
+                    <div class="card-body">
+                        <h5 class="product-title">Nubia Red Magic 6</h5>
+                        <p class="product-price">14.500.000đ</p>
+                        <p class="product-category">Điện Thoại Gaming</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Gaming 5 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/gaming5.jpg" class="card-img-top" alt="Điện Thoại Gaming 5">
+                    <div class="card-body">
+                        <h5 class="product-title">Realme GT 2 Pro</h5>
+                        <p class="product-price">15.500.000đ</p>
+                        <p class="product-category">Điện Thoại Gaming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Điện Thoại Đang Sale -->
+        <div class="category-header">
+            <h3 class="text-center">Điện Thoại Đang Sale</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Điện Thoại Sale 1 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/sale1.jpg" class="card-img-top" alt="Điện Thoại Sale 1">
+                    <div class="card-body">
+                        <h5 class="product-title">iPhone 13 Pro Max</h5>
+                        <p class="product-price"><del>30.000.000đ</del> <span class="new-price">25.500.000đ</span></p>
+                        <p class="product-category">Điện Thoại Đang Sale</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Sale 2 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/sale2.jpg" class="card-img-top" alt="Điện Thoại Sale 2">
+                    <div class="card-body">
+                        <h5 class="product-title">Samsung Galaxy S21</h5>
+                        <p class="product-price"><del>24.000.000đ</del> <span class="new-price">20.400.000đ</span></p>
+                        <p class="product-category">Điện Thoại Đang Sale</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Sale 3 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/sale3.jpg" class="card-img-top" alt="Điện Thoại Sale 3">
+                    <div class="card-body">
+                        <h5 class="product-title">Xiaomi Redmi Note 10</h5>
+                        <p class="product-price"><del>7.500.000đ</del> <span class="new-price">6.375.000đ</span></p>
+                        <p class="product-category">Điện Thoại Đang Sale</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Sale 4 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/sale4.jpg" class="card-img-top" alt="Điện Thoại Sale 4">
+                    <div class="card-body">
+                        <h5 class="product-title">Oppo Reno 5</h5>
+                        <p class="product-price"><del>12.000.000đ</del> <span class="new-price">10.200.000đ</span></p>
+                        <p class="product-category">Điện Thoại Đang Sale</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Điện Thoại Sale 5 -->
+            <div class="col">
+                <div class="card product-card h-100">
+                    <img src="img/sale5.jpg" class="card-img-top" alt="Điện Thoại Sale 5">
+                    <div class="card-body">
+                        <h5 class="product-title">Realme 8 Pro</h5>
+                        <p class="product-price"><del>9.500.000đ</del> <span class="new-price">8.075.000đ</span></p>
+                        <p class="product-category">Điện Thoại Đang Sale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-warning border-top text-dark text-center p-4 mt-5">
+        <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+        <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+        <p>Thực hiện bởi:</p>
+        <p><strong>Ngô Gia Bảo - 23681401</strong></p>
+        <p>Trường Đại học Công nghiệp</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".card product-card h-100");
+            cards.forEach(function (card) {
+                card.addEventListener("click", function () {
+                    window.location.href = "chitietDon.html";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

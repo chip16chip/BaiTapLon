@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Điện Thoại</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #ffd700;
+        }
+
+        header {
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card-body {
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .card-text strong {
+            color: #333;
+            text-decoration: line-through;
+        }
+
+        .price-new {
+            color: #d9534f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-md-8 {
+            width: 66.66667%;
+        }
+
+        .col-md-4 {
+            width: 33.33333%;
+            padding-left: 15px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .col-md-8 {
+                width: 100%;
+            }
+
+            .col-md-4 {
+                width: 100%;
+            }
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .col-md-8 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg" alt="" style="width: 70px;">
+                Cửa Hàng Điện Thoại
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh Mục Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tất Cả Sản Phẩm</a>
+                            <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                            <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                            <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                            <a class="dropdown-item" href="lt.html">Laptop</a>
+                            <a class="dropdown-item" href="tv.html">Tivi</a>
+                            <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Giỏ Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dangNhapDangXuat.html" class="nav-link">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Sidebar danh mục -->
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="list-group-item active">Danh mục sản phẩm</li>
+                        <a href="pk.html" class="list-group-item list-group-item-action">Phụ kiện</a>
+                        <a href="dh.html" class="list-group-item list-group-item-action">Đồng hồ</a>
+                        <a href="dt.html" class="list-group-item list-group-item-action">Điện thoại</a>
+                        <a href="lt.html" class="list-group-item list-group-item-action">Laptop</a>
+                        <a href="tv.html" class="list-group-item list-group-item-action">Tivi</a>
+                        <a href="cu.html" class="list-group-item list-group-item-action">Hàng cũ</a>
+                    </ul>
+                </div>
+
+
+                <!-- Carousel banner -->
+                <div class="col-md-9">
+                    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner rounded-3 shadow-sm">
+                            <div class="carousel-item active">
+                                <img src="img/banner1.jpg" class="d-block w-100" alt="Banner 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/banner2.jpg" class="d-block w-100" alt="Banner 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/banner3.jpg" class="d-block w-100" alt="Banner 3">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-target="#bannerCarousel"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Trước</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-target="#bannerCarousel"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Tiếp</span>
+                        </button>
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-target="#bannerCarousel" data-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-target="#bannerCarousel" data-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-target="#bannerCarousel" data-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sản phẩm bán chạy -->
+            <h4 class="mt-5 mb-3">📈 Sản phẩm bán chạy</h4>
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/iphone4.jpg" alt="iPhone 15 Pro Max" class="product-img" id="mainImage">
+                        <div class="card-body">
+                            <h6 class="card-title">iPhone 15 Pro Max</h6>
+                            <p class="card-text text-danger fw-bold">34.990.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thêm 4 sản phẩm nữa tương tự -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/sp2.jpg" class="card-img-top" alt="Samsung Galaxy S23">
+                        <div class="card-body">
+                            <h6 class="card-title">Samsung Galaxy S23</h6>
+                            <p class="card-text text-danger fw-bold">20.500.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/sp3.jpg" class="card-img-top" alt="OPPO Reno10">
+                        <div class="card-body">
+                            <h6 class="card-title">OPPO Reno10</h6>
+                            <p class="card-text text-danger fw-bold">11.990.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/sp4.jpg" class="card-img-top" alt="iPhone 13">
+                        <div class="card-body">
+                            <h6 class="card-title">iPhone 13</h6>
+                            <p class="card-text text-danger fw-bold">17.990.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/sp5.jpg" class="card-img-top" alt="Xiaomi Redmi Note 13">
+                        <div class="card-body">
+                            <h6 class="card-title">Xiaomi Redmi Note 13</h6>
+                            <p class="card-text text-danger fw-bold">4.290.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm ưu đãi -->
+            <h4 class="mt-5 mb-3">🎁 Sản phẩm ưu đãi</h4>
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <!-- Ví dụ sản phẩm 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/phone2.jpg" class="card-img-top" alt="iPhone 14 Pro Max">
+                        <div class="card-body">
+                            <h6 class="card-title">iPhone 14 Pro Max</h6>
+                            <p class="card-text">
+                                <span class="text-muted text-decoration-line-through">30.000.000đ</span><br>
+                                <span class="text-danger fw-bold">25.500.000đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thêm 4 sản phẩm nữa -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/phone5.jpg" class="card-img-top" alt="Samsung Z Fold5">
+                        <div class="card-body">
+                            <h6 class="card-title">Samsung Z Fold5</h6>
+                            <p class="card-text">
+                                <span class="text-muted text-decoration-line-through">40.000.000đ</span><br>
+                                <span class="text-danger fw-bold">34.000.000đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/sp8.jpg" class="card-img-top" alt="OPPO Find X5">
+                        <div class="card-body">
+                            <h6 class="card-title">OPPO Find X5</h6>
+                            <p class="card-text">
+                                <span class="text-muted text-decoration-line-through">22.000.000đ</span><br>
+                                <span class="text-danger fw-bold">18.700.000đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/sp9.jpg" class="card-img-top" alt="iPhone 12">
+                        <div class="card-body">
+                            <h6 class="card-title">iPhone 12</h6>
+                            <p class="card-text">
+                                <span class="text-muted text-decoration-line-through">16.000.000đ</span><br>
+                                <span class="text-danger fw-bold">13.600.000đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/sp10.jpg" class="card-img-top" alt="Xiaomi 12T Pro">
+                        <div class="card-body">
+                            <h6 class="card-title">Xiaomi 12T Pro</h6>
+                            <p class="card-text">
+                                <span class="text-muted text-decoration-line-through">14.000.000đ</span><br>
+                                <span class="text-danger fw-bold">11.900.000đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-warning border-top text-dark text-center p-4 mt-5">
+        <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+        <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+        <p>Thực hiện bởi:</p>
+        <p><strong>Ngô Gia Bảo - 23681401</strong></p>
+        <p>Trường Đại học Công nghiệp</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".card.h-100");
+            cards.forEach(function (card) {
+                card.addEventListener("click", function () {
+                    window.location.href = "chitietDon.html";
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

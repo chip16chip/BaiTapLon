@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ Kiện Điện Thoại - Cửa Hàng Điện Thoại</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #d9534f;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .product-category {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .category-header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .category-header i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg" alt="" style="width: 70px;">
+                Cửa Hàng Điện Thoại
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh Mục Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tất Cả Sản Phẩm</a>
+                            <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                            <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                            <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                            <a class="dropdown-item" href="lt.html">Laptop</a>
+                            <a class="dropdown-item" href="tv.html">Tivi</a>
+                            <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Giỏ Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dangNhapDangXuat.html" class="nav-link">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-4">
+
+            <!-- Phụ Kiện Điện Thoại -->
+            <div class="category-header">
+                <h3 class="text-center"><i class="fas fa-headphones"></i>Phụ Kiện Điện Thoại</h3>
+            </div>
+
+            <!-- Tai Nghe -->
+            <div class="category-header">
+                <h3 class="text-center"><i class="fas fa-headphones-alt"></i>Tai Nghe</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien1.jpg" class="card-img-top" alt="Tai Nghe 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Tai Nghe Sony WH-1000XM4</h5>
+                            <p class="product-price">6.500.000đ</p>
+                            <p class="product-category">Tai Nghe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien2.jpg" class="card-img-top" alt="Tai Nghe 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Tai Nghe Bose QuietComfort 35</h5>
+                            <p class="product-price">5.800.000đ</p>
+                            <p class="product-category">Tai Nghe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien3.jpg" class="card-img-top" alt="Tai Nghe 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Tai Nghe Apple AirPods Pro</h5>
+                            <p class="product-price">4.200.000đ</p>
+                            <p class="product-category">Tai Nghe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien4.jpg" class="card-img-top" alt="Tai Nghe 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Tai Nghe JBL Free X</h5>
+                            <p class="product-price">2.100.000đ</p>
+                            <p class="product-category">Tai Nghe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien5.jpg" class="card-img-top" alt="Tai Nghe 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Tai Nghe Sennheiser Momentum 3</h5>
+                            <p class="product-price">7.000.000đ</p>
+                            <p class="product-category">Tai Nghe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bàn Phím -->
+            <div class="category-header">
+                <h3 class="text-center"><i class="fas fa-keyboard"></i>Bàn Phím</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien6.jpg" class="card-img-top" alt="Bàn Phím 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Bàn Phím Logitech G Pro X</h5>
+                            <p class="product-price">2.500.000đ</p>
+                            <p class="product-category">Bàn Phím</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien7.jpg" class="card-img-top" alt="Bàn Phím 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Bàn Phím Razer Huntsman</h5>
+                            <p class="product-price">3.200.000đ</p>
+                            <p class="product-category">Bàn Phím</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien8.jpg" class="card-img-top" alt="Bàn Phím 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Bàn Phím Corsair K95 RGB</h5>
+                            <p class="product-price">4.500.000đ</p>
+                            <p class="product-category">Bàn Phím</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien9.jpg" class="card-img-top" alt="Bàn Phím 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Bàn Phím Logitech K400 Plus</h5>
+                            <p class="product-price">700.000đ</p>
+                            <p class="product-category">Bàn Phím</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien10.jpg" class="card-img-top" alt="Bàn Phím 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Bàn Phím SteelSeries Apex 7</h5>
+                            <p class="product-price">3.000.000đ</p>
+                            <p class="product-category">Bàn Phím</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dây Sạc -->
+            <div class="category-header">
+                <h3 class="text-center"><i class="fas fa-plug"></i>Dây Sạc</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien11.jpg" class="card-img-top" alt="Dây Sạc 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Dây Sạc Anker PowerLine+ II</h5>
+                            <p class="product-price">300.000đ</p>
+                            <p class="product-category">Dây Sạc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien12.jpg" class="card-img-top" alt="Dây Sạc 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Dây Sạc Aukey 3A</h5>
+                            <p class="product-price">150.000đ</p>
+                            <p class="product-category">Dây Sạc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien13.jpg" class="card-img-top" alt="Dây Sạc 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Dây Sạc Baseus 2M</h5>
+                            <p class="product-price">200.000đ</p>
+                            <p class="product-category">Dây Sạc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien14.jpg" class="card-img-top" alt="Dây Sạc 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Dây Sạc Ugreen 3M</h5>
+                            <p class="product-price">250.000đ</p>
+                            <p class="product-category">Dây Sạc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien15.jpg" class="card-img-top" alt="Dây Sạc 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Dây Sạc Xiaomi Mi 20W</h5>
+                            <p class="product-price">120.000đ</p>
+                            <p class="product-category">Dây Sạc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loa -->
+            <div class="category-header">
+                <h3 class="text-center"><i class="fas fa-speaker"></i>Loa</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien16.jpg" class="card-img-top" alt="Loa 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Loa JBL Charge 4</h5>
+                            <p class="product-price">4.500.000đ</p>
+                            <p class="product-category">Loa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien17.jpg" class="card-img-top" alt="Loa 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Loa Bose SoundLink Mini II</h5>
+                            <p class="product-price">3.200.000đ</p>
+                            <p class="product-category">Loa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien18.jpg" class="card-img-top" alt="Loa 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Loa Sony SRS-XB12</h5>
+                            <p class="product-price">1.800.000đ</p>
+                            <p class="product-category">Loa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien19.jpg" class="card-img-top" alt="Loa 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Loa Marshall Kilburn II</h5>
+                            <p class="product-price">7.000.000đ</p>
+                            <p class="product-category">Loa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien20.jpg" class="card-img-top" alt="Loa 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Loa Anker Soundcore 2</h5>
+                            <p class="product-price">2.500.000đ</p>
+                            <p class="product-category">Loa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ốp Lưng -->
+            <div class="category-header">
+                <h3 class="text-center"><i class="fas fa-mobile-alt"></i>Ốp Lưng</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien21.jpg" class="card-img-top" alt="Ốp Lưng 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Ốp Lưng iPhone 12</h5>
+                            <p class="product-price">150.000đ</p>
+                            <p class="product-category">Ốp Lưng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien22.jpg" class="card-img-top" alt="Ốp Lưng 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Ốp Lưng Samsung Galaxy S21</h5>
+                            <p class="product-price">200.000đ</p>
+                            <p class="product-category">Ốp Lưng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien23.jpg" class="card-img-top" alt="Ốp Lưng 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Ốp Lưng Xiaomi Mi 11</h5>
+                            <p class="product-price">120.000đ</p>
+                            <p class="product-category">Ốp Lưng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien24.jpg" class="card-img-top" alt="Ốp Lưng 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Ốp Lưng OnePlus 9 Pro</h5>
+                            <p class="product-price">250.000đ</p>
+                            <p class="product-category">Ốp Lưng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/phukien25.jpg" class="card-img-top" alt="Ốp Lưng 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Ốp Lưng Huawei P40 Pro</h5>
+                            <p class="product-price">220.000đ</p>
+                            <p class="product-category">Ốp Lưng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-warning border-top text-dark text-center p-4 mt-5">
+        <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+        <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+        <p>Thực hiện bởi:</p>
+        <p><strong>Ngô Gia Bảo - 23681401</strong></p>
+        <p>Trường Đại học Công nghiệp</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".card product-card h-100");
+            cards.forEach(function (card) {
+                card.addEventListener("click", function () {
+                    window.location.href = "chitietDon.html";
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

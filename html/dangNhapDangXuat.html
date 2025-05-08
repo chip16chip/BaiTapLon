@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập & Đăng Ký - Cửa Hàng Điện Thoại</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+
+        .login-title,
+        .register-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .btn-login,
+        .btn-register {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .toggle-form-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875em;
+            margin-top: 5px;
+            min-height: 20px;
+        }
+
+        .form-control.is-invalid {
+            border-color: #dc3545;
+            background-image: none;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Cửa Hàng Điện Thoại
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <div class="login-container" id="loginForm">
+                <h3 class="login-title">Đăng Nhập</h3>
+                <form id="loginFormElement">
+                    <div class="form-group">
+                        <label for="username">Tên Đăng Nhập</label>
+                        <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập" required>
+                        <div class="error-message" id="usernameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mật Khẩu</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Nhập mật khẩu" required>
+                        <div class="error-message" id="loginPasswordError"></div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-login" onclick="validateLoginForm()">Đăng Nhập</button>
+                </form>
+                <a class="toggle-form-link" onclick="toggleForms()">Chưa có tài khoản? Đăng ký ngay!</a>
+            </div>
+
+            <div class="login-container" id="registerForm" style="display: none;">
+                <h3 class="register-title">Đăng Ký</h3>
+                <form id="registerFormElement">
+                    <div class="form-group">
+                        <label for="newUsername">Tên Đăng Nhập</label>
+                        <input type="text" class="form-control" id="newUsername" placeholder="Nhập tên đăng nhập mới" required>
+                        <div class="error-message" id="newUsernameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">Mật Khẩu</label>
+                        <input type="password" class="form-control" id="newPassword" placeholder="Nhập mật khẩu mới" required>
+                        <div class="error-message" id="newPasswordError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Xác Nhận Mật Khẩu</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Xác nhận mật khẩu" required>
+                        <div class="error-message" id="confirmPasswordError"></div>
+                    </div>
+                    <button type="button" class="btn btn-success btn-register" onclick="validateRegisterForm()">Đăng Ký</button>
+                </form>
+                <a class="toggle-form-link" onclick="toggleForms()">Đã có tài khoản? Đăng nhập ngay!</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-warning text-dark text-center p-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+            <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+            <p>Thực hiện bởi: <strong>Ngô Gia Bảo - 23681401</strong></p>
+            <p>Trường Đại học Công nghiệp</p>
+        </div>
+    </footer>
+
+    // ...existing code...
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Validation patterns
+        const VALIDATION_PATTERNS = {
+            username: /[A-Z]/,
+            password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/
+        };
+
+        // Error messages
+        const ERROR_MESSAGES = {
+            username: 'Tên đăng nhập phải có ít nhất một chữ viết hoa.',
+            password: 'Mật khẩu phải có ít nhất 8 ký tự, một chữ hoa, một chữ thường và một ký tự đặc biệt.',
+            confirmPassword: 'Mật khẩu xác nhận không khớp.'
+        };
+
+        // Toggle between login and register forms
+        function toggleForms() {
+            const loginForm = document.getElementById('loginForm');
+            const registerForm = document.getElementById('registerForm');
+            
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+            clearFormErrors();
+        }
+
+        // Validate login form
+        function validateLoginForm() {
+            clearFormErrors();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('loginPassword').value;
+
+            if (validateCredentials(username, password)) {
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Validate register form
+        function validateRegisterForm() {
+            clearFormErrors();
+            const username = document.getElementById('newUsername').value;
+            const password = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (validateRegistration(username, password, confirmPassword)) {
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Validate credentials
+        function validateCredentials(username, password) {
+            let isValid = true;
+
+            if (!VALIDATION_PATTERNS.username.test(username)) {
+                showError('usernameError', ERROR_MESSAGES.username);
+                isValid = false;
+            }
+
+            if (!VALIDATION_PATTERNS.password.test(password)) {
+                showError('loginPasswordError', ERROR_MESSAGES.password);
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        // Validate registration
+        function validateRegistration(username, password, confirmPassword) {
+            let isValid = true;
+
+            if (!VALIDATION_PATTERNS.username.test(username)) {
+                showError('newUsernameError', ERROR_MESSAGES.username);
+                isValid = false;
+            }
+
+            if (!VALIDATION_PATTERNS.password.test(password)) {
+                showError('newPasswordError', ERROR_MESSAGES.password);
+                isValid = false;
+            }
+
+            if (password !== confirmPassword) {
+                showError('confirmPasswordError', ERROR_MESSAGES.confirmPassword);
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        // Show error message
+        function showError(elementId, message) {
+            const errorElement = document.getElementById(elementId);
+            errorElement.textContent = message;
+            errorElement.parentElement.querySelector('input').classList.add('is-invalid');
+        }
+
+        // Clear all form errors
+        function clearFormErrors() {
+            document.querySelectorAll('.error-message').forEach(error => {
+                error.textContent = '';
+            });
+            document.querySelectorAll('.is-invalid').forEach(input => {
+                input.classList.remove('is-invalid');
+            });
+        }
+    </script>
+</body>
+</html>

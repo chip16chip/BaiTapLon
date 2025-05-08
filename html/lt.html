@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Laptop - Cửa Hàng Điện Thoại</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #d9534f;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .product-category {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .category-header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg" alt="" style="width: 70px;">
+                Cửa Hàng Điện Thoại
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh Mục Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tất Cả Sản Phẩm</a>
+                            <a class="dropdown-item" href="pk.html">Phụ Kiện</a>
+                            <a class="dropdown-item" href="dh.html">Đồng Hồ</a>
+                            <a class="dropdown-item" href="dt.html">Điện Thoại</a>
+                            <a class="dropdown-item" href="lt.html">Laptop</a>
+                            <a class="dropdown-item" href="tv.html">Tivi</a>
+                            <a class="dropdown-item" href="cu.html">Hàng Cũ</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Giỏ Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dangNhapDangXuat.html" class="nav-link">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-4">
+
+            <!-- Sản Phẩm Mới -->
+            <div class="category-header">
+                <h3 class="text-center">Sản Phẩm Mới</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop1.jpg" class="card-img-top" alt="Laptop 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Dell XPS 13</h5>
+                            <p class="product-price">25.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop2.jpg" class="card-img-top" alt="Laptop 2">
+                        <div class="card-body">
+                            <h5 class="product-title">MacBook Pro 13</h5>
+                            <p class="product-price">35.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop3.jpg" class="card-img-top" alt="Laptop 3">
+                        <div class="card-body">
+                            <h5 class="product-title">HP Spectre x360</h5>
+                            <p class="product-price">28.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop4.jpg" class="card-img-top" alt="Laptop 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Lenovo ThinkPad X1</h5>
+                            <p class="product-price">30.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop5.jpg" class="card-img-top" alt="Laptop 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Asus ZenBook 14</h5>
+                            <p class="product-price">24.500.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản Phẩm Bán Chạy -->
+            <div class="category-header mt-5">
+                <h3 class="text-center">Sản Phẩm Bán Chạy</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop6.jpg" class="card-img-top" alt="Laptop 6">
+                        <div class="card-body">
+                            <h5 class="product-title">Dell Inspiron 15</h5>
+                            <p class="product-price">22.000.000đ</p>
+                            <p class="product-category">Bán Chạy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop7.jpg" class="card-img-top" alt="Laptop 7">
+                        <div class="card-body">
+                            <h5 class="product-title">Acer Aspire 5</h5>
+                            <p class="product-price">18.000.000đ</p>
+                            <p class="product-category">Bán Chạy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop8.jpg" class="card-img-top" alt="Laptop 8">
+                        <div class="card-body">
+                            <h5 class="product-title">HP Pavilion 14</h5>
+                            <p class="product-price">15.000.000đ</p>
+                            <p class="product-category">Bán Chạy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop9.jpg" class="card-img-top" alt="Laptop 9">
+                        <div class="card-body">
+                            <h5 class="product-title">Lenovo Yoga 7i</h5>
+                            <p class="product-price">23.000.000đ</p>
+                            <p class="product-category">Bán Chạy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop10.jpg" class="card-img-top" alt="Laptop 10">
+                        <div class="card-body">
+                            <h5 class="product-title">Asus VivoBook 15</h5>
+                            <p class="product-price">19.500.000đ</p>
+                            <p class="product-category">Bán Chạy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laptop Gaming -->
+            <div class="category-header mt-5">
+                <h3 class="text-center">Laptop Gaming</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop11.jpg" class="card-img-top" alt="Laptop Gaming 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Asus ROG Strix G15</h5>
+                            <p class="product-price">35.000.000đ</p>
+                            <p class="product-category">Gaming</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop12.jpg" class="card-img-top" alt="Laptop Gaming 2">
+                        <div class="card-body">
+                            <h5 class="product-title">MSI GE66 Raider</h5>
+                            <p class="product-price">40.000.000đ</p>
+                            <p class="product-category">Gaming</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop13.jpg" class="card-img-top" alt="Laptop Gaming 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Alienware m15</h5>
+                            <p class="product-price">45.000.000đ</p>
+                            <p class="product-category">Gaming</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop14.jpg" class="card-img-top" alt="Laptop Gaming 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Razer Blade 15</h5>
+                            <p class="product-price">47.000.000đ</p>
+                            <p class="product-category">Gaming</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop15.jpg" class="card-img-top" alt="Laptop Gaming 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Gigabyte AORUS 15G</h5>
+                            <p class="product-price">50.000.000đ</p>
+                            <p class="product-category">Gaming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laptop Văn Phòng -->
+            <div class="category-header mt-5">
+                <h3 class="text-center">Laptop Văn Phòng</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop16.jpg" class="card-img-top" alt="Laptop Văn Phòng 1">
+                        <div class="card-body">
+                            <h5 class="product-title">HP ProBook 450</h5>
+                            <p class="product-price">18.000.000đ</p>
+                            <p class="product-category">Văn Phòng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop17.jpg" class="card-img-top" alt="Laptop Văn Phòng 2">
+                        <div class="card-body">
+                            <h5 class="product-title">Lenovo ThinkPad E14</h5>
+                            <p class="product-price">20.000.000đ</p>
+                            <p class="product-category">Văn Phòng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop18.jpg" class="card-img-top" alt="Laptop Văn Phòng 3">
+                        <div class="card-body">
+                            <h5 class="product-title">Asus VivoBook X512</h5>
+                            <p class="product-price">16.500.000đ</p>
+                            <p class="product-category">Văn Phòng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop19.jpg" class="card-img-top" alt="Laptop Văn Phòng 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Acer Swift 3</h5>
+                            <p class="product-price">18.500.000đ</p>
+                            <p class="product-category">Văn Phòng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop20.jpg" class="card-img-top" alt="Laptop Văn Phòng 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Dell Vostro 15</h5>
+                            <p class="product-price">19.000.000đ</p>
+                            <p class="product-category">Văn Phòng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="category-header">
+                <h3 class="text-center">Tất Cả Laptop</h3>
+            </div>
+
+            <!-- Sản Phẩm -->
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Laptop 1 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop1.jpg" class="card-img-top" alt="Laptop 1">
+                        <div class="card-body">
+                            <h5 class="product-title">Laptop Dell XPS 13</h5>
+                            <p class="product-price">25.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Laptop 2 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop2.jpg" class="card-img-top" alt="Laptop 2">
+                        <div class="card-body">
+                            <h5 class="product-title">MacBook Pro 13</h5>
+                            <p class="product-price">35.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Laptop 3 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop3.jpg" class="card-img-top" alt="Laptop 3">
+                        <div class="card-body">
+                            <h5 class="product-title">HP Spectre x360</h5>
+                            <p class="product-price">28.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Laptop 4 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop4.jpg" class="card-img-top" alt="Laptop 4">
+                        <div class="card-body">
+                            <h5 class="product-title">Lenovo ThinkPad X1</h5>
+                            <p class="product-price">30.000.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Laptop 5 -->
+                <div class="col">
+                    <div class="card product-card h-100">
+                        <img src="img/laptop5.jpg" class="card-img-top" alt="Laptop 5">
+                        <div class="card-body">
+                            <h5 class="product-title">Asus ZenBook 14</h5>
+                            <p class="product-price">24.500.000đ</p>
+                            <p class="product-category">Laptop Mới</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phân trang -->
+            <div class="text-center mt-4">
+                <a href="dslaptop.html" class="btn btn-warning">Xem Tất Cả Sản Phẩm</a>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-warning border-top text-dark text-center p-4 mt-5">
+        <p>&copy; 2025 Cửa Hàng Điện Thoại. Tất cả quyền lợi được bảo vệ.</p>
+        <p>Bài báo cáo tập lớn môn Thiết Kế Web</p>
+        <p>Thực hiện bởi:</p>
+        <p><strong>Ngô Gia Bảo - 23681401</strong></p>
+        <p>Trường Đại học Công nghiệp</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".card product-card h-100");
+            cards.forEach(function (card) {
+                card.addEventListener("click", function () {
+                    window.location.href = "chitietDon.html";
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
